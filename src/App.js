@@ -38,7 +38,7 @@ function App() {
               {(loading === true) ?
                 <span><i className="fas fa-cog fa-spin"></i> Generating</span>
                 :
-                <span><i class="fas fa-random"></i> Generate</span>
+                <span><i className="fas fa-random"></i> Generate</span>
               }
             </Button>
             <div className="link">
@@ -56,7 +56,7 @@ function App() {
                   <p>In the generated random file, we have</p>
                   <ul>
                     <li>Alphabetical strings: {report.alphabets}</li>
-                    <li>Real numbers strings: {report.real}</li>
+                    <li>Real number strings: {report.real}</li>
                     <li>Integer strings: {report.numerals}</li>
                     <li>Alphanumeric strings: {report.alphanumeric}</li>
                   </ul>
