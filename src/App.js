@@ -15,7 +15,7 @@ function App() {
       setLink("");
       setInfo("Please wait while we generate your file ");
       setLoading(true);
-      const { data } = await axios.get('http://localhost:5000/generate');
+      const { data } = await axios.get('https://randgen-api.herokuapp.com/generate');
       setInfo("");
       setLoading(false);
       setLink(data.link);
@@ -44,7 +44,7 @@ function App() {
             <div className="link">
               <p>
                 <span>{info}</span>
-                <a className="card-link" href="http://localhost:5000/download" target="_blank" rel="noreferrer">
+                <a className="card-link" href="https://randgen-api.herokuapp.com/download" target="_blank" rel="noreferrer">
                   {link}
                 </a>
               </p>
